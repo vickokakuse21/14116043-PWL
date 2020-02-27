@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Merriweather:400,600&display=swap');
+
+nav ul {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+    box-shadow: 13px 12px 23px #eee;
+    background-color: #24252a;
+    justify-content: center;
+}
+
+
+nav li a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #edf0f1;
+    transition: all 0.3s ease 0s;
+    padding: 0px 20px;
+}
+
+nav li a:hover {
+    color: #0088a9;
+}
+
+section {
+    margin-left: 20%;
+    word-break: break-word;
+    padding-top: 2rem;
+    margin-right: 20%;
+}
+
+section h1,
+h6 {
+    font-family: 'Montserrat';
+    font-size: 32px;
+}
+
+section h4 {
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+
+section h3,
+h2,
+h5 {
+    font-weight: 'Merriweather';
+}
+
+section p {
+    font-weight: 'Merriweather';
+}
+
+.fakeimg {
+    background-image: url('/assets/assets/bg.jpg');
+    width: 100%;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

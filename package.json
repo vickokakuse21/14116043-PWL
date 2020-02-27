@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "global": "^4.4.0"
+  }
+}
