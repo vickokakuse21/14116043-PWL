@@ -10,6 +10,14 @@ nav ul {
     justify-content: center;
 }
 
+/* nav ul li a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #edf0f1;
+    transition: all 0.3s ease 0s;
+    padding: 0px 20px;
+    text-transform: uppercase;
+} */
 
 nav li a {
     font-family: 'Montserrat';
@@ -21,6 +29,29 @@ nav li a {
 
 nav li a:hover {
     color: #0088a9;
+}
+
+.capsule {
+    background-color: #24252a;
+    /* min-height: 3rem;
+    width: 24rem; */
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    .capsule {
+        width: 70%;
+    }
+
+    ul li {
+        padding: none;
+    }
 }
 
 section {
